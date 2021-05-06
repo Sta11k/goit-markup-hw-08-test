@@ -433,10 +433,6 @@ img {
   }
 }
 
-.projects__item {
-  outline: 1px solid tomato;
-}
-
 .projects__link {
   margin: 0;
   display: block;
