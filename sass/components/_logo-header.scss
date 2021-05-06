@@ -1,11 +1,10 @@
-  %logo-start-end{
+%logo-start-end {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-
 }
 
 .logo-decor {
@@ -14,13 +13,12 @@
   margin-right: 93px;
 
   &__start {
-  @extend %logo-start-end;
-  color: var(--hover-focus-color);
-}
+    @extend %logo-start-end;
+    color: var(--hover-focus-color);
+  }
 
   &__end {
-  @extend %logo-start-end;
-  color: var(--black-text-color);
+    @extend %logo-start-end;
+    color: var(--black-text-color);
   }
 }
-

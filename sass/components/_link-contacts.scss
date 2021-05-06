@@ -12,7 +12,22 @@
 //   transition: color var(--transition-oll);
 // }
 
+@media screen and (max-width: 1199.89px) {
   %mail-phone {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+    color: var(--prymory-text-color);
+
+    transition: color var(--transition-oll);
+  }
+}
+
+%mail-phone {
   padding-top: 20px;
   padding-bottom: 20px;
 
@@ -25,19 +40,28 @@
   transition: color var(--transition-oll);
 }
 
-
 .link-phone {
   display: flex;
   align-items: center;
   width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
-  &{
-  @extend %mail-phone;
+  & {
+    @extend %mail-phone;
   }
 
   &:hover,
-  &:focus{
-  color: var(--hover-focus-color);
+  &:focus {
+    color: var(--hover-focus-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .link-mail {
+    display: flex;
+    align-items: center;
+    width: 100%;
   }
 }
 
@@ -45,18 +69,18 @@
   display: flex;
   align-items: center;
   width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
-  &{
+  & {
     @extend %mail-phone;
   }
 
   &:hover,
   &:focus {
-  color: var(--hover-focus-color);
+    color: var(--hover-focus-color);
   }
 }
-
-
 
 // .link-phone:hover,
 // .link-phone:focus,
@@ -65,8 +89,6 @@
 //   color: var(--hover-focus-color);
 // }
 
-
-
 .link-mail__icon {
   width: 16px;
   height: 12px;
@@ -74,8 +96,6 @@
   background-color: #ffffff;
   fill: currentColor;
 }
-
-
 
 .link-phone__icon {
   width: 10px;

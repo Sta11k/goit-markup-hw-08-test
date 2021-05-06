@@ -1,68 +1,143 @@
-.header-line__link-title-studio::after {
-  display: flex;
-  position: absolute;
-  background-image: url(../images/heder_std.svg);
-  content: '';
-  width: 48px;
-  height: 4px;
-  margin-top: 28px;
-}
+// @media screen and (min-width: 768px){
 
-.header-line__link-contacts-icon::after {
-  display: flex;
-  position: absolute;
-  background-image: url(../images/heder_contacts.svg);
-  content: '';
-  width: 68px;
-  height: 4px;
-  margin-top: 28px;
-  transform: scaleX(0);
-  transition: var(--transition-transform);
-}
+// }
 
-.header-line__link-std-icon::after {
-  display: flex;
-  position: absolute;
-  background-image: url(../images/heder_portfolio.svg);
-  content: '';
-  width: 77px;
-  height: 4px;
-  margin-top: 28px;
+@media screen and (min-width: 768px) {
+  .header-line__link-title-studio::after {
+    display: flex;
+    position: absolute;
+    background-image: url(../images/heder_std.svg);
+    content: '';
+    width: 48px;
+    height: 4px;
+    margin-top: 28px;
+  }
 
-  transform: scaleX(0);
-  transition: var(--transition-transform);
-}
+  .header-line__link-contacts-icon::after {
+    display: flex;
+    position: absolute;
+    background-image: url(../images/heder_contacts.svg);
+    content: '';
+    width: 68px;
+    height: 4px;
+    margin-top: 28px;
+    transform: scaleX(0);
+    transition: var(--transition-transform);
+  }
 
-.header-line{
-  &__link-prt-std-icon:hover:after,
-  &__link-prt-std-icon:focus:after,
-  &__link-contacts-icon:hover:after,
-  &__link-contacts-icon:focus:after,
-  &__link-std-icon:hover:after,
-  &__link-std-icon:focus:after {
-  transform: scaleX(1);
+  .header-line__link-std-icon::after {
+    display: flex;
+    position: absolute;
+    background-image: url(../images/heder_portfolio.svg);
+    content: '';
+    width: 77px;
+    height: 4px;
+    margin-top: 28px;
+
+    transform: scaleX(0);
+    transition: var(--transition-transform);
+  }
+
+  .header-line {
+    &__link-prt-std-icon:hover:after,
+    &__link-prt-std-icon:focus:after,
+    &__link-contacts-icon:hover:after,
+    &__link-contacts-icon:focus:after,
+    &__link-std-icon:hover:after,
+    &__link-std-icon:focus:after {
+      transform: scaleX(1);
+    }
+  }
+
+  .header-line__link-portfolio-icon::after {
+    display: flex;
+    position: absolute;
+    background-image: url(../images/heder_portfolio.svg);
+    content: '';
+    width: 77px;
+    height: 4px;
+    margin-top: 28px;
+  }
+
+  .header-line__link-prt-std-icon::after {
+    display: flex;
+    position: absolute;
+    background-image: url(../images/heder_std.svg);
+    content: '';
+    width: 48px;
+    height: 4px;
+    margin-top: 28px;
+    transform: scaleX(0);
+    transition: var(--transition-transform);
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .header-line__link-title-studio::after {
+    display: flex;
+    position: absolute;
+    background-image: url(../images/heder_std.svg);
+    content: '';
+    width: 48px;
+    height: 4px;
+    margin-top: 28px;
+  }
 
-.header-line__link-portfolio-icon::after {
-  display: flex;
-  position: absolute;
-  background-image: url(../images/heder_portfolio.svg);
-  content: '';
-  width: 77px;
-  height: 4px;
-  margin-top: 28px;
-}
+  .header-line__link-contacts-icon::after {
+    display: flex;
+    position: absolute;
+    background-image: url(../images/heder_contacts.svg);
+    content: '';
+    width: 68px;
+    height: 4px;
+    margin-top: 28px;
+    transform: scaleX(0);
+    transition: var(--transition-transform);
+  }
 
-.header-line__link-prt-std-icon::after {
-  display: flex;
-  position: absolute;
-  background-image: url(../images/heder_std.svg);
-  content: '';
-  width: 48px;
-  height: 4px;
-  margin-top: 28px;
-  transform: scaleX(0);
-  transition: var(--transition-transform);
+  .header-line__link-std-icon::after {
+    display: flex;
+    position: absolute;
+    background-image: url(../images/heder_portfolio.svg);
+    content: '';
+    width: 77px;
+    height: 4px;
+    margin-top: 28px;
+
+    transform: scaleX(0);
+    transition: var(--transition-transform);
+  }
+
+  .header-line {
+    &__link-prt-std-icon:hover:after,
+    &__link-prt-std-icon:focus:after,
+    &__link-contacts-icon:hover:after,
+    &__link-contacts-icon:focus:after,
+    &__link-std-icon:hover:after,
+    &__link-std-icon:focus:after {
+      transform: scaleX(1);
+    }
+  }
+
+  .header-line__link-portfolio-icon::after {
+    display: flex;
+    position: absolute;
+    background-image: url(../images/heder_portfolio.svg);
+    content: '';
+    width: 77px;
+    height: 4px;
+    margin-top: 28px;
+  }
+
+  .header-line__link-prt-std-icon::after {
+    display: flex;
+    position: absolute;
+    background-image: url(../images/heder_std.svg);
+    content: '';
+    width: 48px;
+    height: 4px;
+    margin-top: 28px;
+    transform: scaleX(0);
+    transition: var(--transition-transform);
+  }
 }

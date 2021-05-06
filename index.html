@@ -22,7 +22,7 @@
 
 <body>
     <!-- Head site -->
-    <!-- <header class="header header--line header-line">
+    <header class="header header--line header-line">
         
         <div class="container  container-nav" >
 
@@ -30,7 +30,7 @@
 
                 <a href="./index.html" class="logo-decor"> <span class="logo-decor__start" >Web</span> <span class="logo-decor__end">Studio</span> </a>
 
-                <ul class="menu list">
+                <ul class="menu list menu--desctop ">
 
                     <li class="menu__item"> <a class="menu__link-title-text header-line__link-title-studio  menu_link-menu_link--active " href="./index.html" >Студия</a> </li>
 
@@ -42,44 +42,53 @@
 
             </nav>
 
-           
-            <ul class="list contacts">
+            <div class="container-nav__contacts">
+                <ul class="list contacts container-nav__contacts">
+                
+                    <li class="item contacts__item ">
+                
+                        <a class="link-mail" href="mailto:nfo@devstudio.com">
+                
+                            <svg class="link-mail__icon">
+                
+                                <use href="./images/sprite.svg#icon-envelope"></use>
+                
+                            </svg>
+                
+                            info@devstudio.com</a>
+                
+                    </li>
+                
+                    <li class="item  contacts__item ">
+                
+                        <a class="link-phone" href="tel:+380961111111">
+                
+                            <svg class="link-phone__icon">
+                
+                                <use href="./images/sprite.svg#smartphone"></use>
+                
+                            </svg>
+                
+                            +38 096 111 11 11</a>
+                
+                    </li>
+                </ul>
+            </div>
+            
+              
+            <button type="button" class="menu-button is-open" aria-expanded="false" data-menu-button >
+                <svg width="40" height="40"  class="menu-button__icon" aria-label="Переключатель мобильного меню">
+                    <use class="menu-button__icon-close"  href="./images/sprite.svg#icon-menu-close" ></use>
+                    <use class="menu-button__icon-menu"  href="./images/sprite.svg#icon-menu"></use>
+                </svg>
 
-                <li class="item contacts__item ">
-
-                    <a class="link-mail" href="mailto:nfo@devstudio.com"  >
-                        
-                        <svg class="link-mail__icon">
-
-                                <use href="./images/sprite.svg#icon-envelope" ></use>
-
-                        </svg>
-                        
-                        info@devstudio.com</a>
-
-                </li>
-
-                <li class="item  contacts__item ">
-
-                    <a  class="link-phone" href="tel:+380961111111">
-                        
-                        <svg class="link-phone__icon">
-                        
-                            <use href="./images/sprite.svg#smartphone" ></use>
-                        
-                        </svg>
-                        
-                        +38 096 111 11 11</a>
-
-                </li>
-            </ul>
-
+            </button>
         </div>
 
-    </header> -->
+    </header>
 
     <!-- Main information -->
-    <main>
+    <!-- <main>
         <section class=" section title-hero-section">
         
             <div class=" container-hero">
@@ -200,7 +209,7 @@
         </section>
        
 
-        <!--our advantage  -->
+      
 
         <section class="section advatage-section">
             
@@ -306,7 +315,6 @@
             </div>
         </section>
 
-                                                 <!-- Our team -->
         <section class="section  section-team" >
 
             <div class="container ">
@@ -618,7 +626,7 @@
           
         </section> 
 
-            <!-- Section-client -->
+            
 
         <section class="section section-client">
 
@@ -723,14 +731,14 @@
 
         </section>
         
-    </main>
+    </main> -->
 
     
     <!--FOOTER  -->
 
 
     
-    <footer class="footer footer-section">
+    <!-- <footer class="footer footer-section">
     
         <div class="container container-footer ">
     
@@ -864,8 +872,8 @@
     
     
     
-    </footer> 
-   
+    </footer>  -->
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 
 </body>
