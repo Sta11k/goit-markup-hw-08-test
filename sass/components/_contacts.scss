@@ -1,17 +1,10 @@
 .contacts {
+  display: flex;
+  align-items: center;
   margin-bottom: 0px;
   height: 16px;
-}
 
-@media screen and (max-width: 767.98px) {
-  .contacts {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0px;
-    height: 16px;
-
-    &__item:not(:last-child) {
-      margin-right: 50px;
-    }
+  &__item:not(:last-child) {
+    margin-right: 50px;
   }
 }
