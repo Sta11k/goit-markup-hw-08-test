@@ -1,0 +1,153 @@
+
+
+// .subscription {
+//   width: 100%;
+//   padding-top: 12px;
+// }
+
+.subscription-block {
+  width: 100%;
+  
+  &__email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: #2f303a;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  
+.subscription {
+  width: 100%;
+  padding-top: 5px;
+}
+
+.subscription-block {
+  width: 100%;
+  
+  &__email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  max-width: 450px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: #2f303a;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.03em;
+  }
+  
+  }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+  
+.subscription {
+  max-width: 570px;
+  padding-top: 12px;
+}
+
+.subscription-block {
+  width: 100%;
+  display: flex;
+
+  &__email {
+  margin-right: 12px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 358px;
+  }
+  
+  }
+}
+
+
+
+.title-link-subscription {
+  display: block;
+
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--whiet-text-color);
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+    
+  }
+}
+
+
+/* .icon-send */
+
+.subsription-btn {
+  position: relative;
+
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  background-color: #188ce8;
+  padding: 10px 62px 10px 29px;
+  border-radius: 4px;
+  border: 0;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--whiet-text-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  cursor: pointer;
+
+  transition: background-color var(--transition-oll);
+
+  &:hover,
+  &:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--hover-focus-color);
+  }
+}
+
+.subsription-btn__icon {
+  position: absolute;
+
+  top: 13px;
+  right: 28px;
+  width: 24px;
+  height: 24px;
+}
+

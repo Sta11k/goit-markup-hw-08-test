@@ -1,0 +1,11 @@
+.contacts {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  height: 16px;
+
+  &__item:not(:last-child) {
+  margin-right: 50px;
+  } 
+}
+
