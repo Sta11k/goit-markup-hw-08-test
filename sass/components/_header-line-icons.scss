@@ -16,6 +16,7 @@
   .header-line__link-contacts-icon::after {
     display: flex;
     position: absolute;
+    z-index: 634453;
     background-image: url(../images/heder_contacts.svg);
     content: '';
     width: 68px;

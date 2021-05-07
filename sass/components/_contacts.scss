@@ -1,10 +1,26 @@
-.contacts {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0px;
-  height: 16px;
 
+
+
+
+@media screen and (max-width:767.89px) {
+  .contacts {
+    display: inline-flex;
+    flex-direction: column-reverse;
+    margin-bottom: 64px;
+    max-width: 300px;
+   &__item:not(:first-child) {
+    margin-bottom: 32px;
+  }
+    &__item{
+  max-width: 300px;
+}
+}
+
+}
+
+@media screen and (min-width:768px) {
   &__item:not(:last-child) {
     margin-right: 50px;
-  }
+  
+}
 }

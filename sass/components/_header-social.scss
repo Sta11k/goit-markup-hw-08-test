@@ -1,0 +1,50 @@
+
+   
+        .header-social{
+        display: inline-flex;
+        justify-content: start;
+        padding: 0;
+        margin: 0;
+        max-width:360px ;
+
+       
+
+        &__item:not(:last-child){
+            
+            border-right: 1px solid rgba(33, 33, 33, 0.2);
+            
+            @media screen and (min-width:320px) {
+                margin-right: 2px;
+                padding-right: 2px;
+            }
+
+
+            @media screen and (min-width:480px) {
+               margin-right: 10px;
+                padding-right: 10px;
+            }
+        }
+
+        
+            &__link{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.22;
+            letter-spacing: 0.02em;
+            text-decoration: none;
+            color: #2196F3;
+
+                @media screen and (min-width:320px) {
+                font-size: 16px;
+                line-height: 1.22;
+
+            }
+
+        }
+  }
+
+
+        
+ 
+
+  

@@ -10,7 +10,7 @@
 .logo-decor {
   display: block;
   text-decoration: none;
-  margin-right: 93px;
+  margin:0;
 
   &__start {
     @extend %logo-start-end;
@@ -20,5 +20,14 @@
   &__end {
     @extend %logo-start-end;
     color: var(--black-text-color);
+  }
+
+  @media screen and(min-width:768px) {
+    margin-right: 88px;
+  }
+
+
+  @media screen and(min-width:1200px) {
+    margin-right: 93px;
   }
 }

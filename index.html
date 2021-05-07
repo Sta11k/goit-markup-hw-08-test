@@ -29,60 +29,68 @@
             <nav class="nav">
 
                 <a href="./index.html" class="logo-decor"> <span class="logo-decor__start" >Web</span> <span class="logo-decor__end">Studio</span> </a>
+                
+                <button type="button" class="menu-button is-open" aria-expanded="false" arial-controls="menu-container"
+                    data-menu-button>
+                    <svg width="40" height="40" class="menu-button__icon" aria-label="Переключатель мобильного меню">
+                        <use class=" menu-button__icon-menu" href="./images/sprite.svg#icon-menu-close"></use>
+                        <use class="menu-button__icon-close" href="./images/sprite.svg#icon-menu"></use>
+                    </svg>
+                
+                </button>
+                
+                <div class="menu-container menu-desctop " id="menu-container" data-menu>
+                    <ul class="menu list menu--desctop ">
 
-                <ul class="menu list menu--desctop ">
+                        <li class="menu__item"> <a class="menu__link-title-text header-line__link-title-studio  menu__link--active " href="./index.html" >Студия</a> </li>
 
-                    <li class="menu__item"> <a class="menu__link-title-text header-line__link-title-studio  menu__link--active " href="./index.html" >Студия</a> </li>
+                        <li class="menu__item"> <a class="menu__link-title-text header-line__link-std-icon" href="./portfolio.html">Портфолио</a></li>
 
-                    <li class="menu__item"> <a class="menu__link-title-text header-line__link-std-icon" href="./portfolio.html">Портфолио</a></li>
+                        <li class="menu__item"> <a class="menu__link-title-text header-line__link-contacts-icon" href="">Контакты</a> </li>
 
-                    <li class="menu__item"> <a class="menu__link-title-text header-line__link-contacts-icon" href="">Контакты</a> </li>
-
-                </ul>
-
+                    </ul>
+                
+                    <div class="container-nav__contacts">
+                        <ul class="list contacts container-nav__list">
+                    
+                            <li class="item contacts__item ">
+                    
+                                <a class="link-mail" href="mailto:nfo@devstudio.com">
+                    
+                                    <svg class="link-mail__icon">
+                    
+                                        <use href="./images/sprite.svg#icon-envelope"></use>
+                    
+                                    </svg>
+                    
+                                    info@devstudio.com</a>
+                    
+                            </li>
+                    
+                            <li class="item  contacts__item ">
+                    
+                                <a class="link-phone" href="tel:+380961111111">
+                    
+                                    <svg class="link-phone__icon">
+                    
+                                        <use href="./images/sprite.svg#smartphone"></use>
+                    
+                                    </svg>
+                    
+                                    +38 096 111 11 11</a>
+                    
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="header-social">
+                        <li class="header-social__item"><a class="header-social__link " href="./index.html">Instagram</a></li>
+                        <li class="header-social__item"><a class="header-social__link " href="./index.html">Twitter</a></li>
+                        <li class="header-social__item"><a class="header-social__link " href="./index.html">Facebook</a></li>
+                        <li class="header-social__item"><a class="header-social__link " href="./index.html">LinkedIn</a></li>
+                    </ul>
+                </div>
             </nav>
-
-            <div class="container-nav__contacts">
-                <ul class="list contacts container-nav__contacts">
-                
-                    <li class="item contacts__item ">
-                
-                        <a class="link-mail" href="mailto:nfo@devstudio.com">
-                
-                            <svg class="link-mail__icon">
-                
-                                <use href="./images/sprite.svg#icon-envelope"></use>
-                
-                            </svg>
-                
-                            info@devstudio.com</a>
-                
-                    </li>
-                
-                    <li class="item  contacts__item ">
-                
-                        <a class="link-phone" href="tel:+380961111111">
-                
-                            <svg class="link-phone__icon">
-                
-                                <use href="./images/sprite.svg#smartphone"></use>
-                
-                            </svg>
-                
-                            +38 096 111 11 11</a>
-                
-                    </li>
-                </ul>
-            </div>
-            
-              
-            <button type="button" class="menu-button is-open" aria-expanded="false" data-menu-button >
-                <svg width="40" height="40"  class="menu-button__icon" aria-label="Переключатель мобильного меню">
-                    <use class="menu-button__icon-close"  href="./images/sprite.svg#icon-menu-close" ></use>
-                    <use class="menu-button__icon-menu"  href="./images/sprite.svg#icon-menu"></use>
-                </svg>
-
-            </button>
+               
         </div>
 
     </header>
