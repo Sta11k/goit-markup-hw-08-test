@@ -163,16 +163,19 @@ textarea::placeholder {
 }
 
 .form-field-condition {
-  display: flex;
+  display: inline-flex;
   align-items: baseline;
   justify-content: center;
   margin-bottom: 30px;
-  width: 370px;
+  width: 100%;
   padding: 0;
+
+  @media screen and (min-width: 480px) {
+    min-width: 370px;
+  }
 
   @media screen and (min-width: 1200px) {
     min-width: 435px;
-    padding: 0;
   }
 }
 
