@@ -18,66 +18,86 @@
 <body>
 
     <!-- Head site -->
-
-    <header class="header-line header--line ">
-    
-        <div class="container container-nav">
-    
-            <nav class="nav">
-    
-                <a href="./index.html" class="logo-decor"> <span class="logo-decor__start">Web</span> <span
-                        class="logo-decor__end">Studio</span> </a>
-    
-                <ul class="menu list">
-    
-                    <li class="menu__item"> <a class="menu__link-title-text header-line__link-prt-std-icon " href="./index.html">Студия</a> </li>
-    
-                    <li class="menu__item"> <a class="menu__link-title-text header-line__link-portfolio-icon menu__link--active" href="./portfolio.html">Портфолио</a></li>
-    
-                    <li class="menu__item"> <a class="menu__link-title-text header-line__link-contacts-icon" href="">Контакты</a> </li>
-    
-                </ul>
-    
-            </nav>
-    
-          
-          
-            <ul class="list contacts">
-            
-                <li class="item contacts__item">
-            
-                    <a class="link-mail" href="mailto:nfo@devstudio.com">
-            
-                        <svg class="link-mail__icon">
-            
-                            <use href="./images/sprite.svg#icon-envelope"></use>
-            
+        <header class="header header--line header-line">
+        
+            <div class="container  container-nav">
+        
+                <nav class="nav">
+        
+                    <a href="./index.html" class="logo-decor"> <span class="logo-decor__start">Web</span> <span
+                            class="logo-decor__end">Studio</span> </a>
+        
+                    <button type="button" class="menu-button is-open" aria-expanded="false" arial-controls="menu-container"
+                        data-menu-button>
+                        <svg width="40" height="40" class="menu-button__icon" aria-label="Переключатель мобильного меню">
+                            <use class=" menu-button__icon-menu" href="./images/sprite.svg#icon-menu-close"></use>
+                            <use class="menu-button__icon-close" href="./images/sprite.svg#icon-menu"></use>
                         </svg>
-            
-                        info@devstudio.com</a>
-            
-                </li>
-            
-                <li class="item contacts__item">
-            
-                    <a class="link-phone" href="tel:+380961111111">
-            
-                        <svg class="link-phone__icon">
-            
-                            <use href="./images/sprite.svg#smartphone"></use>
-            
-                        </svg>
-            
-                        +38 096 111 11 11</a>
-            
-                </li>
-
-            </ul>
-
-        </div>
-    
-    </header>
-    <!-- Main information -->
+        
+                    </button>
+        
+                    <div class="menu-container menu-desctop " id="menu-container" data-menu>
+                        <ul class="menu list menu--desctop ">
+        
+                            <li class="menu__item"> <a class="menu__link-title-text header-line__link-prt-std-icon " href="./index.html">Студия</a>
+                            </li>
+        
+                            <li class="menu__item"> <a class="menu__link-title-text header-line__link-portfolio-icon menu__link--active"
+                                    href="./portfolio.html">Портфолио</a></li>
+        
+                            <li class="menu__item"> <a class="menu__link-title-text header-line__link-contacts-icon"
+                                    href="">Контакты</a> </li>
+        
+                        </ul>
+        
+                        <div class="container-nav__contacts">
+                            <ul class="list contacts container-nav__list">
+        
+                                <li class="item contacts__item ">
+        
+                                    <a class="link-mail" href="mailto:nfo@devstudio.com">
+        
+                                        <svg class="link-mail__icon">
+        
+                                            <use href="./images/sprite.svg#icon-envelope"></use>
+        
+                                        </svg>
+        
+                                        info@devstudio.com</a>
+        
+                                </li>
+        
+                                <li class="item  contacts__item ">
+        
+                                    <a class="link-phone" href="tel:+380961111111">
+        
+                                        <svg class="link-phone__icon">
+        
+                                            <use href="./images/sprite.svg#smartphone"></use>
+        
+                                        </svg>
+        
+                                        +38 096 111 11 11</a>
+        
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="header-social">
+                            <li class="header-social__item"><a class="header-social__link " href="./index.html">Instagram</a>
+                            </li>
+                            <li class="header-social__item"><a class="header-social__link " href="./index.html">Twitter</a></li>
+                            <li class="header-social__item"><a class="header-social__link " href="./index.html">Facebook</a>
+                            </li>
+                            <li class="header-social__item"><a class="header-social__link " href="./index.html">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+        
+            </div>
+        
+        </header>
+   
     <main>
 
         <h1 class="visually-hidden">Портфолио</h1>
@@ -153,13 +173,13 @@
 
                                 <picture>
                                     <source
-                                        srcset="./images/desctop/portfolio/tehnokryak_img.jpg 1x, ./images/desctop/portfolio/./images/desctop/portfolio/tehnokryak_img@2x.jpg 2x"
+                                        srcset="./images/desctop/portfolio/star_img.jpg 1x, ./images/desctop/portfolio/./images/desctop/portfolio/star_img@2x.jpg 2x"
                                         media="(min-width: 1200px)" />
-                                    <source srcset="./images/tablets/portfolio/tehnokryak_img.jpg 1x, ./images/tablets/portfolio/tehnokryak_img@2x.jpg 2x"
+                                    <source srcset="./images/tablets/portfolio/star_img.jpg 1x, ./images/tablets/portfolio/star_img@2x.jpg 2x"
                                         media="(min-width: 768px)" />
-                                    <source srcset="./images/mobile/portfolio/tehnokryak_img.jpg 1x, ./images/mobile/portfolio/tehnokryak_img@2x.jpg 2x "
+                                    <source srcset="./images/mobile/portfolio/star_img.jpg 1x, ./images/mobile/portfolio/star_img@2x.jpg 2x "
                                         media="(max-width: 767px)" />
-                                    <img class="progects__img" src="./images/Star.jpg" alt="Два баскетболиста в прыжке, один блокрует бросок второго"
+                                    <img class="progects__img" src="./images/star.jpg" alt="Два баскетболиста в прыжке, один блокрует бросок второго"
                                         max-width="450">
                                 </picture>
                                     
@@ -201,13 +221,13 @@
                             <div class="progects__overlay">
                                 <picture>
                                     <source
-                                        srcset="./images/desctop/portfolio/tehnokryak_img.jpg 1x, ./images/desctop/portfolio/./images/desctop/portfolio/tehnokryak_img@2x.jpg 2x"
+                                        srcset="./images/desctop/portfolio/seafood_img.jpg 1x, ./images/desctop/portfolio/./images/desctop/portfolio/seafood_img@2x.jpg 2x"
                                         media="(min-width: 1200px)" />
-                                    <source srcset="./images/tablets/portfolio/tehnokryak_img.jpg 1x, ./images/tablets/portfolio/tehnokryak_img@2x.jpg 2x"
+                                    <source srcset="./images/tablets/portfolio/seafood.jpg 1x, ./images/tablets/portfolio/seafood_img@2x.jpg 2x"
                                         media="(min-width: 768px)" />
-                                    <source srcset="./images/mobile/portfolio/tehnokryak_img.jpg 1x, ./images/mobile/portfolio/tehnokryak_img@2x.jpg 2x "
+                                    <source srcset="./images/mobile/portfolio/seafood_img.jpg 1x, ./images/mobile/portfolio/seafood_img@2x.jpg 2x "
                                         media="(max-width: 767px)" />
-                                    <img class="progects__img" src="./images/Seafood.jpg" alt="Вригивающая форель и название ресторна " max-width="450">
+                                    <img class="progects__img" src="./images/seafood.jpg" alt="Вригивающая форель и название ресторна " max-width="450">
                                 </picture>
                                
                 
@@ -249,13 +269,13 @@
                             <div class="progects__overlay">
                                 <picture>
                                     <source
-                                        srcset="./images/desctop/portfolio/tehnokryak_img.jpg 1x, ./images/desctop/portfolio/./images/desctop/portfolio/tehnokryak_img@2x.jpg 2x"
+                                        srcset="./images/desctop/portfolio/prime_img.jpg 1x, ./images/desctop/portfolio/./images/desctop/portfolio/prime_img@2x.jpg 2x"
                                         media="(min-width: 1200px)" />
-                                    <source srcset="./images/tablets/portfolio/tehnokryak_img.jpg 1x, ./images/tablets/portfolio/tehnokryak_img@2x.jpg 2x"
+                                    <source srcset="./images/tablets/portfolio/prime_img.jpg 1x, ./images/tablets/portfolio/prime_img@2x.jpg 2x"
                                         media="(min-width: 768px)" />
-                                    <source srcset="./images/mobile/portfolio/tehnokryak_img.jpg 1x, ./images/mobile/portfolio/tehnokryak_img@2x.jpg 2x "
+                                    <source srcset="./images/mobile/portfolio/prime_img.jpg 1x, ./images/mobile/portfolio/prime_img@2x.jpg 2x "
                                         media="(max-width: 767px)" />
-                                    <img class="progects__img" src="./images/Prime.jpg" alt="Наушнки" max-width="450">
+                                    <img class="progects__img" src="./images/prime.jpg" alt="Наушнки" max-width="450">
                                 </picture>
                                 
                 
@@ -294,13 +314,13 @@
                             <div class="progects__overlay">
                                 <picture>
                                     <source
-                                        srcset="./images/desctop/portfolio/tehnokryak_img.jpg 1x, ./images/desctop/portfolio/./images/desctop/portfolio/tehnokryak_img@2x.jpg 2x"
+                                        srcset="./images/desctop/portfolio/boxes_img.jpg 1x, ./images/desctop/portfolio/./images/desctop/portfolio/boxes_img@2x.jpg 2x"
                                         media="(min-width: 1200px)" />
-                                    <source srcset="./images/tablets/portfolio/tehnokryak_img.jpg 1x, ./images/tablets/portfolio/tehnokryak_img@2x.jpg 2x"
+                                    <source srcset="./images/tablets/portfolio/boxes_img.jpg 1x, ./images/tablets/portfolio/boxes_img@2x.jpg 2x"
                                         media="(min-width: 768px)" />
-                                    <source srcset="./images/mobile/portfolio/tehnokryak_img.jpg 1x, ./images/mobile/portfolio/tehnokryak_img@2x.jpg 2x "
+                                    <source srcset="./images/mobile/portfolio/boxes_img.jpg 1x, ./images/mobile/portfolio/boxes_img@2x.jpg 2x "
                                         media="(max-width: 767px)" />
-                                    <img class="progects__img" src="./images/Boxes.jpg" alt="две коробочки, серая  и светлокоричневая" max-width="450">
+                                    <img class="progects__img" src="./images/boxes.jpg" alt="две коробочки, серая  и светлокоричневая" max-width="450">
                                 </picture>
                                 
                 
@@ -342,13 +362,13 @@
                             <div class="progects__overlay">
                                 <picture>
                                     <source
-                                        srcset="./images/desctop/portfolio/tehnokryak_img.jpg 1x, ./images/desctop/portfolio/./images/desctop/portfolio/tehnokryak_img@2x.jpg 2x"
+                                        srcset="./images/desctop/portfolio/borders_img.jpg 1x, ./images/desctop/portfolio/./images/desctop/portfolio/borders_img@2x.jpg 2x"
                                         media="(min-width: 1200px)" />
-                                    <source srcset="./images/tablets/portfolio/tehnokryak_img.jpg 1x, ./images/tablets/portfolio/tehnokryak_img@2x.jpg 2x"
+                                    <source srcset="./images/tablets/portfolio/borders_img.jpg 1x, ./images/tablets/portfolio/borders_img@2x.jpg 2x"
                                         media="(min-width: 768px)" />
-                                    <source srcset="./images/mobile/portfolio/tehnokryak_img.jpg 1x, ./images/mobile/portfolio/tehnokryak_img@2x.jpg 2x "
+                                    <source srcset="./images/mobile/portfolio/borders_img.jpg 1x, ./images/mobile/portfolio/borders_img@2x.jpg 2x "
                                         media="(max-width: 767px)" />
-                                    <img class="progects__img" src="./images/Borders.jpg"
+                                    <img class="progects__img" src="./images/borders.jpg"
                                         alt="Доска с картой мира на темном  фоне и списоком предлогаемых услуг" max-width="450">
                                 </picture>
                                 
@@ -388,13 +408,13 @@
                             <div class="progects__overlay">
                                 <picture>
                                     <source
-                                        srcset="./images/desctop/portfolio/tehnokryak_img.jpg 1x, ./images/desctop/portfolio/./images/desctop/portfolio/tehnokryak_img@2x.jpg 2x"
+                                        srcset="./images/desctop/portfolio/limited_img.jpg 1x, ./images/desctop/portfolio/./images/desctop/portfolio/limited_img@2x.jpg 2x"
                                         media="(min-width: 1200px)" />
-                                    <source srcset="./images/tablets/portfolio/tehnokryak_img.jpg 1x, ./images/tablets/portfolio/tehnokryak_img@2x.jpg 2x"
+                                    <source srcset="./images/tablets/portfolio/limited_img.jpg 1x, ./images/tablets/portfolio/limited_img@2x.jpg 2x"
                                         media="(min-width: 768px)" />
-                                    <source srcset="./images/mobile/portfolio/tehnokryak_img.jpg 1x, ./images/mobile/portfolio/tehnokryak_img@2x.jpg 2x "
+                                    <source srcset="./images/mobile/portfolio/limited_img.jpg 1x, ./images/mobile/portfolio/limited_img@2x.jpg 2x "
                                         media="(max-width: 767px)" />
-                                    <img class="progects__img" src="./images/Limited.jpg"
+                                    <img class="progects__img" src="./images/limited.jpg"
                                         alt="Развернутый журнал с изображениями женщин с разним предметами" max-width="450">
                                 </picture>
                 
@@ -434,13 +454,13 @@
                             <div class="progects__overlay">
                                 <picture>
                                     <source
-                                        srcset="./images/desctop/portfolio/tehnokryak_img.jpg 1x, ./images/desctop/portfolio/./images/desctop/portfolio/tehnokryak_img@2x.jpg 2x"
+                                        srcset="./images/desctop/portfolio/lab_img.jpg 1x, ./images/desctop/portfolio/./images/desctop/portfolio/lab_img@2x.jpg 2x"
                                         media="(min-width: 1200px)" />
-                                    <source srcset="./images/tablets/portfolio/tehnokryak_img.jpg 1x, ./images/tablets/portfolio/tehnokryak_img@2x.jpg 2x"
+                                    <source srcset="./images/tablets/portfolio/lab_img.jpg 1x, ./images/tablets/portfolio/lab_img@2x.jpg 2x"
                                         media="(min-width: 768px)" />
-                                    <source srcset="./images/mobile/portfolio/tehnokryak_img.jpg 1x, ./images/mobile/portfolio/tehnokryak_img@2x.jpg 2x "
+                                    <source srcset="./images/mobile/portfolio/lab_img.jpg 1x, ./images/mobile/portfolio/lab_img@2x.jpg 2x "
                                         media="(max-width: 767px)" />
-                                    <img class="progects__img" src="./images/LAB.jpg" alt="Этикетка з надисями  LAB EL TAG" max-width="450">
+                                    <img class="progects__img" src="./images/lab.jpg" alt="Этикетка з надисями  LAB EL TAG" max-width="450">
                                 </picture>
                               
                 
@@ -478,13 +498,13 @@
                             <div class="progects__overlay">
                                 <picture>
                                     <source
-                                        srcset="./images/desctop/portfolio/tehnokryak_img.jpg 1x, ./images/desctop/portfolio/./images/desctop/portfolio/tehnokryak_img@2x.jpg 2x"
+                                        srcset="./images/desctop/portfolio/business_img.jpg 1x, ./images/desctop/portfolio/./images/desctop/portfolio/business_img@2x.jpg 2x"
                                         media="(min-width: 1200px)" />
-                                    <source srcset="./images/tablets/portfolio/tehnokryak_img.jpg 1x, ./images/tablets/portfolio/tehnokryak_img@2x.jpg 2x"
+                                    <source srcset="./images/tablets/portfolio/business_img.jpg 1x, ./images/tablets/portfolio/business_img@2x.jpg 2x"
                                         media="(min-width: 768px)" />
-                                    <source srcset="./images/mobile/portfolio/tehnokryak_img.jpg 1x, ./images/mobile/portfolio/tehnokryak_img@2x.jpg 2x "
+                                    <source srcset="./images/mobile/portfolio/business_img.jpg 1x, ./images/mobile/portfolio/business_img@2x.jpg 2x "
                                         media="(max-width: 767px)" />
-                                    <img class="progects__img" src="./images/Business.jpg" alt="Ноутбук заставкой  странички сайта" max-width="450">
+                                    <img class="progects__img" src="./images/business.jpg" alt="Ноутбук заставкой  странички сайта" max-width="450">
                                 </picture>
                                 
                 
@@ -663,7 +683,7 @@
     
     </footer>
    
-
+<script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
