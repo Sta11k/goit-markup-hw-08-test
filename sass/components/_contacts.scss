@@ -8,19 +8,47 @@
     flex-direction: column-reverse;
     margin-bottom: 64px;
     max-width: 300px;
+
+
    &__item:not(:first-child) {
     margin-bottom: 32px;
-  }
+    }
     &__item{
-  max-width: 300px;
-}
+    max-width: 300px;
+  }
 }
 
 }
 
 @media screen and (min-width:768px) {
+  .contacts {
+    display: inline-flex;
+    flex-direction: column;
+    
+   &__item:not(:last-child) {
+    margin-bottom: 10px;
+    }
+ 
+}
+
+}
+
+    // &__item{
+    //   display: flex;
+    //  flex-direction: column;
+    // }
+
+//    }
+
+//   &__item:not(:last-child) {
+//     margin-bottom: 10px;
+  
+// }
+
+@media screen and (min-width:1200px) {
   &__item:not(:last-child) {
     margin-right: 50px;
   
 }
+
 }

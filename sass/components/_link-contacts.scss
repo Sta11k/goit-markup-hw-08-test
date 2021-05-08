@@ -13,18 +13,18 @@
 // }
 
 // @media screen and (max-width: 1199.89px) {
-//   %mail-phone {
-//     padding-top: 10px;
-//     padding-bottom: 10px;
+  %mail-phone {
+    padding-top: 10px;
+    padding-bottom: 10px;
 
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     text-decoration: none;
-//     color: var(--prymory-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+    color: var(--prymory-text-color);
 
-//     transition: color var(--transition-oll);
-//   }
+    transition: color var(--transition-oll);
+  }
 // }
 
  %mail-phone {
@@ -63,8 +63,8 @@
 
   @media screen and (min-width: 768px) {
       color: var(--prymory-text-color);
-      font-size: 14px;
-      line-height: 1.14;
+      font-size: 12px;
+      line-height: 1.16;
     }
  
     
@@ -80,7 +80,15 @@
 
   }
 
- 
+ @media screen and (min-width: 768px) {
+  .link-mail {
+     font-size: 12px;
+      line-height: 1.16;
+    // display: flex;
+    // align-items: center;
+    
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .link-mail {

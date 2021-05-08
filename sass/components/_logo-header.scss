@@ -2,32 +2,67 @@
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
 }
-
+  
 .logo-decor {
-  display: block;
-  text-decoration: none;
-  margin:0;
-
+  @extend %logo-start-end;
+  @media screen and (max-width: 767.98px){
+    display: inline-block;
+    text-decoration: none;
+    margin:0;
+    padding: 0;
+    width: 100%;
   &__start {
-    @extend %logo-start-end;
+   
     color: var(--hover-focus-color);
   }
 
   &__end {
-    @extend %logo-start-end;
+    
+    // @extend %logo-start-end;
     color: var(--black-text-color);
   }
 
+  }
+
   @media screen and(min-width:768px) {
+    display: flex;
+    text-decoration: none;
     margin-right: 88px;
+    padding: 0;
+    max-width: 137px;
+    // width: 100%;
+     &__start {
+   
+    color: var(--hover-focus-color);
+  }
+
+  &__end {
+    
+    // @extend %logo-start-end;
+    color: var(--black-text-color);
+  }
   }
 
 
   @media screen and(min-width:1200px) {
+    // display: inline-block;
+    text-decoration: none;
     margin-right: 93px;
+    font-size: 26px;
+    line-height: 1.2;
+     &__start {
+   
+    color: var(--hover-focus-color);
+  }
+
+  &__end {
+    
+    // @extend %logo-start-end;
+    color: var(--black-text-color);
+  }
   }
 }

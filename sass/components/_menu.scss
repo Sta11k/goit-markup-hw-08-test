@@ -1,9 +1,12 @@
 .menu {
+
+
+  @media screen and (max-width: 767.89px) {
   position: relative;
   // z-index: 323432;
   display: inlite-flex;
   // flex-direction: column;
-  margin-bottom: 302px;
+  margin-bottom: 280px;
 
   &__item{
    max-width: 220px;
@@ -11,10 +14,18 @@
 
   &__item:not(:last-child) {
     margin-bottom: 32px;
-
-
-
   }
+  }
+
+@media screen and (min-width: 768px){
+  display: flex;
+
+  &__item:not(:last-child) {
+    margin-right:  50px;
+  }
+
+
+}
 
   // @media screen and (max-width: 767.98px) {
   //   .menu__item {
@@ -43,10 +54,22 @@
 
 }
 
+@media screen and (min-width:768px) {
+  .menu__link-title-text {
+  // padding-top: 20px;
+  // padding-bottom: 31px;
+
+  
+  font-size: 14px;
+  line-height: 1.14;
+  
+  }
+}
+
 @media screen and (min-width:1200px) {
   .menu__link-title-text {
-  padding-top: 20px;
-  padding-bottom: 31px;
+  // padding-top: 20px;
+  // padding-bottom: 31px;
 
   
   font-size: 14px;

@@ -1,15 +1,18 @@
 
    
         .header-social{
-        display: inline-flex;
-        justify-content: start;
-        padding: 0;
-        margin: 0;
-        max-width:360px ;
-
+            display: none;
+      
+            @media screen and (max-width: 767.89px) {
+                display: inline-flex;
+                justify-content: start;
+                padding: 0;
+                margin: 0;
+                max-width:360px ;
+            }
        
 
-        &__item:not(:last-child){
+             &__item:not(:last-child){
             
             border-right: 1px solid rgba(33, 33, 33, 0.2);
             
