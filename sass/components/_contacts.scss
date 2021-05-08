@@ -46,9 +46,24 @@
 // }
 
 @media screen and (min-width:1200px) {
-  &__item:not(:last-child) {
-    margin-right: 50px;
+
+   .contacts {
+    display: flex;
+    flex-direction: row;
+    // flex-wrap: wrap;
+
+    min-width: 335;
+     &__item{
+    max-width: 300px;
+  }
+   &__item:not(:last-child) {
+    margin-right: 30px;
+    }
+//   &__item:not(:last-child) {
+//     margin-right: 50px;
   
-}
 
 }
+}
+
+
