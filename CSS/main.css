@@ -266,7 +266,7 @@ img {
   .menu {
     position: relative;
     display: inlite-flex;
-    margin-bottom: 280px;
+    margin-bottom: 150px;
   }
   .menu__item {
     max-width: 220px;
